@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.foroHub.foroHub.topic.Topic;
 import com.foroHub.foroHub.topic.TopicRepository;
+import com.foroHub.foroHub.user.User;
 import com.foroHub.foroHub.user.UserRepository;
 
 import jakarta.transaction.Transactional;
@@ -26,6 +27,4 @@ public class TopicController {
         Topic savedTopic = topicRepository.save(topic);
         return ResponseEntity.ok(savedTopic);
     }
-    
-    // Otros métodos...
 }
